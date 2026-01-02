@@ -27,7 +27,7 @@ fn main() -> Result<()> {
     }
 
     // Verify OpenSSL version
-    #[cfg(feature = "jwt_openssl")]
+    #[cfg(feature = "jwt-openssl")]
     {
         use openssl::version;
         // Minimal OpenSSL version that meets FIPS certification

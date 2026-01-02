@@ -49,9 +49,9 @@ mod utils;
 #[cfg(feature = "uuid")]
 mod uuid;
 
-#[cfg(feature = "jwt_openssl")]
+#[cfg(feature = "jwt-openssl")]
 mod jwt;
-#[cfg(feature = "jwt_openssl")]
+#[cfg(feature = "jwt-openssl")]
 mod token_verification;
 
 #[cfg(feature = "opa-testutil")]
@@ -114,7 +114,7 @@ lazy_static! {
 	tracing::register(&mut m);
 	units::register(&mut m);
 
-	#[cfg(feature = "jwt_openssl")]
+	#[cfg(feature = "jwt-openssl")]
 	token_verification::register(&mut m);
 
 	#[cfg(feature = "opa-testutil")]

@@ -1,5 +1,5 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-#[cfg(feature = "jwt_openssl")]
+#[cfg(feature = "jwt-openssl")]
 pub mod openssl;

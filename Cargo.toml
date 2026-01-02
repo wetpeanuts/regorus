@@ -46,7 +46,7 @@ time = ["dep:chrono", "dep:chrono-tz"]
 uuid = ["dep:uuid"]
 urlquery = ["dep:url"]
 yaml = ["serde_yaml"]
-jwt_openssl = ["openssl"]
+jwt-openssl = ["openssl"]
 full-opa = [
     "base64",
     "base64url",
@@ -92,6 +92,9 @@ rego-extensions = []
 # This feature enables some testing utils for OPA tests.
 opa-testutil = []
 rand = ["dep:rand"]
+
+# Enable this feature to omit some restrictions in opa test environment
+opa-test = []
 
 [dependencies]
 anyhow = { version = "1.0.45", default-features = false }
