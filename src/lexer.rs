@@ -26,7 +26,7 @@ use anyhow::{anyhow, bail, Result};
 // Original OPA test coverage does not meet this requirement and the check should
 // be omitted for the tests to pass.
 const MAX_COL: u32 = const {
-    if cfg!(feature = "opa-test") {
+    if cfg!(feature = "weak-safety") {
         u32::MAX
     } else {
         1024

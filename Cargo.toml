@@ -94,7 +94,7 @@ opa-testutil = []
 rand = ["dep:rand"]
 
 # Enable this feature to omit some restrictions in opa test environment
-opa-test = []
+weak-safety = []
 
 [dependencies]
 anyhow = { version = "1.0.45", default-features = false }
